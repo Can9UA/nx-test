@@ -10,7 +10,14 @@
       <h1>Memorizer app</h1>
 
       <div class="my-3">
-        <nx-test-test-cmp></nx-test-test-cmp>
+        <nx-test-cmp
+          [input1]="input1"
+          [input2]="input2"
+          (output1)="output1($event)"
+          (output2)="output2($event)"
+        >
+          <p>Projected content</p>
+        </nx-test-cmp>
       </div>
     </div>
   </mat-drawer-content>
