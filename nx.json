@@ -45,6 +45,10 @@
     },
     "test-lib": {
       "tags": []
+    },
+    "test-lib-e2e": {
+      "tags": [],
+      "implicitDependencies": ["test-lib"]
     }
   }
 }
