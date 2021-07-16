@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'memorizer';
+  input1 = 50;
+  input2 = 75;
+
+  output1($event: any) {
+    console.log($event);
+  }
+
+  output2($event: any) {
+    console.log($event);
+  }
 }
