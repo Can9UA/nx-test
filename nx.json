@@ -42,6 +42,9 @@
     "memorizer-e2e": {
       "tags": [],
       "implicitDependencies": ["memorizer"]
+    },
+    "test-lib": {
+      "tags": []
     }
   }
 }
