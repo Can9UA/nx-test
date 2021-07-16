@@ -21,7 +21,7 @@
               "apps/memorizer/src/favicon.ico",
               "apps/memorizer/src/assets"
             ],
-            "styles": ["apps/memorizer/src/styles.scss"],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "apps/memorizer/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
