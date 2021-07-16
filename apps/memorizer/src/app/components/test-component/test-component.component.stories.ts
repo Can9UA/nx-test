@@ -19,6 +19,6 @@ const Template: Story<TestComponentComponent> = (args: TestComponentComponent) =
 
 export const Primary = Template.bind({});
 Primary.args = {
-    input1: 12,
+    input1: 100,
     input2: 23,
 }
