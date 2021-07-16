@@ -3,16 +3,16 @@
   "projects": {
     "libs-material": {
       "projectType": "library",
-      "root": "libs/libs/material",
-      "sourceRoot": "libs/libs/material/src",
+      "root": "libs/material",
+      "sourceRoot": "libs/material/src",
       "prefix": "nx-test",
       "architect": {
         "lint": {
           "builder": "@nrwl/linter:eslint",
           "options": {
             "lintFilePatterns": [
-              "libs/libs/material/src/**/*.ts",
-              "libs/libs/material/src/**/*.html"
+              "libs/material/src/**/*.ts",
+              "libs/material/src/**/*.html"
             ]
           }
         }

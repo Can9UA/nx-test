@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@material": ["libs/libs/material/src/index.ts"]
+      "@material": ["libs/material/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
