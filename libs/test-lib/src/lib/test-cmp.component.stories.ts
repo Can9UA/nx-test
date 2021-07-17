@@ -30,6 +30,11 @@ export default {
 const Template: Story<TestCmpComponent> = (args: TestCmpComponent) => ({
   component: TestCmpComponent,
   props: args,
+  template: `
+    <h1> Custom template </h1>
+    <hr>
+    <nx-test-cmp [input1]="input1" [input2]="input2"></nx-test-cmp>
+  `
 });
 
 
