@@ -20,9 +20,27 @@ export default {
     }
   },
   argTypes: {
+    input1: {
+      table: {
+        category: 'numbers'
+      }
+    },
+    input2: {
+      table: {
+        category: 'numbers'
+      }
+    },
     variant: {
       options: [Variant.One, Variant.Two,  Variant.Three],
-      control: { type: 'select' }
+      control: { type: 'select' },
+      table: {
+        category: 'Other'
+      }
+    },
+    flag: {
+      table: {
+        category: 'Other'
+      }
     }
   }
 } as Meta<TestCmpComponent>;
