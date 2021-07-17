@@ -8,6 +8,10 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
       input2 {{ input2 }}
 
       Result {{ input1 - input2 }}
+
+      Flag: {{ flag }}
+
+      Variant: {{ variant }}
     </pre>
 
     <ng-content></ng-content>
@@ -41,7 +45,15 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 export class TestCmpComponent {
   @Input() input1: any;
   @Input() input2: any;
+  @Input() flag: boolean = false;
+  @Input() variant: Variant = Variant.One;
 
   @Output() output1 = new EventEmitter();
   @Output() output2 = new EventEmitter();
+}
+
+export enum Variant {
+  One,
+  Two,
+  Three
 }
