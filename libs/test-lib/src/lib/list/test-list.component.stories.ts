@@ -1,4 +1,4 @@
-import { moduleMetadata, Story, Meta } from '@storybook/angular';
+import { moduleMetadata, Story, Meta, componentWrapperDecorator } from "@storybook/angular";
 import { TestListComponent } from "./test-list.component";
 import { TestLibModule } from "../test-lib.module";
 
@@ -11,7 +11,8 @@ export default {
   decorators: [
     moduleMetadata({
       imports: [TestLibModule],
-    })
+    }),
+    componentWrapperDecorator((story) => `<div style="margin: 3em">${story}</div>`),
   ],
 } as Meta<TestListComponent>;
 
