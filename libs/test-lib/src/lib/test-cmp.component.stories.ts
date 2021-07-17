@@ -9,6 +9,15 @@ export default {
       imports: [],
     })
   ],
+  parameters: {
+    backgrounds: {
+      values: [
+        { name: 'red', value: '#f00' },
+        { name: 'green', value: '#0f0' },
+        { name: 'blue', value: '#00f' },
+      ],
+    }
+  },
 } as Meta<TestCmpComponent>;
 
 const Template: Story<TestCmpComponent> = (args: TestCmpComponent) => ({
