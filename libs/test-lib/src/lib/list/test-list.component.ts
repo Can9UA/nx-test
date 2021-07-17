@@ -5,6 +5,7 @@ import { Component, Input } from "@angular/core";
   template: `
     <ul>
       <li *ngFor="let i of getArr()">
+        <hr>
         <nx-test-cmp [input1]="btnConfig.input1"
                      [input2]="btnConfig.input2"
                      [flag]="btnConfig.flag"

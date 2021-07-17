@@ -31,7 +31,7 @@ export default {
       }
     },
     variant: {
-      options: [Variant.One, Variant.Two,  Variant.Three],
+      options: [0, 1, 2],
       control: { type: 'select' },
       table: {
         category: 'Other'
@@ -51,7 +51,9 @@ const Template: Story<TestCmpComponent> = (args: TestCmpComponent) => ({
   template: `
     <h1> Custom template </h1>
     <hr>
-    <nx-test-cmp [input1]="input1" [input2]="input2"></nx-test-cmp>
+    <nx-test-cmp [input1]="${args.input1}"
+                 [input2]="${args.input2}">
+    </nx-test-cmp>
   `
 });
 
@@ -61,5 +63,5 @@ Primary.args = {
     input1: 100,
     input2: 75,
     flag: true,
-    variant: Variant.Two
+    variant: undefined // Variant.Two
 }
