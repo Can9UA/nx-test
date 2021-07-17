@@ -19,6 +19,12 @@ export default {
       ],
     }
   },
+  argTypes: {
+    variant: {
+      options: [Variant.One, Variant.Two,  Variant.Three],
+      control: { type: 'select' }
+    }
+  }
 } as Meta<TestCmpComponent>;
 
 const Template: Story<TestCmpComponent> = (args: TestCmpComponent) => ({
@@ -34,13 +40,3 @@ Primary.args = {
     flag: true,
     variant: Variant.Two
 }
-
-/*
-variant: {
-  values: [
-    { name: 'variant one', value: Variant.One },
-    { name: 'variant two', value: Variant.Two },
-    { name: 'three', value: Variant.Three },
-  ],
-},
-* */
