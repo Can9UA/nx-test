@@ -1,12 +1,13 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { TestCmpComponent, Variant } from "./test-cmp.component";
+import { TestLibModule } from "./test-lib.module";
 
 export default {
   title: 'Components/TestComponent',
   component: TestCmpComponent,
   decorators: [
     moduleMetadata({
-      imports: [],
+      imports: [TestLibModule],
     })
   ],
   parameters: {
