@@ -34,8 +34,14 @@ export default {
       options: [0, 1, 2],
       control: { type: 'select' },
       table: {
-        category: 'Other'
-      }
+        category: 'Other',
+        type: {
+          summary: 'Here is label',
+          detail: 'Text inside the label pdf hdfuhas ifhfi huaf'
+        }
+      },
+      description: 'Description lorem ipsom',
+      // defaultValue: 'asda' TODO
     },
     flag: {
       table: {
