@@ -1,5 +1,5 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
-import { TestCmpComponent, Variant } from "./test-cmp.component";
+import { TestCmpComponent } from "./test-cmp.component";
 import { TestLibModule } from "./test-lib.module";
 
 export default {
@@ -11,12 +11,6 @@ export default {
     })
   ],
   parameters: {
-    backgrounds: {
-      values: [
-        { name: 'red', value: '#f00' },
-        { name: 'green', value: '#0f0' },
-        { name: 'blue', value: '#00f' },
-      ],
     }
   },
   argTypes: {
@@ -39,15 +33,25 @@ export default {
           summary: 'Here is label',
           detail: 'Text inside the label pdf hdfuhas ifhfi huaf'
         }
+
       },
       description: 'Description lorem ipsom',
-      // defaultValue: 'asda' TODO
     },
     flag: {
       table: {
         category: 'Other'
       }
-    }
+    },
+    output1: {
+      table: {
+        category: 'Outputs'
+      }
+    },
+    output2: {
+      table: {
+        category: 'Outputs'
+      }
+    },
   }
 } as Meta<TestCmpComponent>;
 
@@ -69,5 +73,5 @@ Primary.args = {
     input1: 100,
     input2: 75,
     flag: true,
-    variant: undefined // Variant.Two
+    variant: 1,
 }
