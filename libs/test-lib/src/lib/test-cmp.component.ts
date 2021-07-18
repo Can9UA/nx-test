@@ -16,7 +16,7 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 
     <ng-content></ng-content>
 
-    <button (click)="emitEvent(1, 'output1: event')"
+    <button (click)="emitEvent(1, 'output1: event data')"
             mat-raised-button
             mat-button
             color="primary">
@@ -25,7 +25,7 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 
     <span class="px-2 d-inline-block w-25"></span>
 
-    <button (click)="emitEvent(2, 'output2: event');"
+    <button (click)="emitEvent(2, 'output2: event data');"
             mat-raised-button
             mat-button
             color="primary">
