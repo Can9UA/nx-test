@@ -12,6 +12,9 @@ export default {
   ],
   parameters: {
     docs: {
+      source: {
+        type: 'auto', // code, auto, dynamic
+      },
       description: {
         component: 'Test cmp documentation _markdown_',
         story: 'Secondary story documentation **markdown**',
