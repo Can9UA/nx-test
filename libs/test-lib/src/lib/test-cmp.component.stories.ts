@@ -16,7 +16,8 @@ export default {
         component: 'Test cmp documentation _markdown_',
         story: 'Secondary story documentation **markdown**',
       },
-    }
+    },
+    // controls: { expanded: true } // show docs in canvas tab for contols
   },
   argTypes: {
     input1: {
