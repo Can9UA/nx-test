@@ -22,8 +22,18 @@ export default {
     input1: {
       table: {
         category: 'inputs',
-        subcategory: 'Numbers'
-      }
+        subcategory: 'Numbers',
+        type: {
+          // required: true,
+          summary: 'Just an input',
+          detail: 'Just details'
+        },
+        defaultValue: {
+          summary: '100',
+          detail: 'I like this number'
+        }
+      },
+      description: 'Description lorem ipsom',
     },
     input2: {
       table: {
