@@ -12,9 +12,10 @@ export default {
   ],
   parameters: {
     docs: {
-      source: {
-        type: 'auto', // code, auto, dynamic
-      }
+      description: {
+        component: 'Test cmp documentation _markdown_',
+        story: 'Secondary story documentation **markdown**',
+      },
     }
   },
   argTypes: {
@@ -81,4 +82,9 @@ Primary.args = {
     input2: 75,
     flag: true,
     variant: 1,
+}
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  ...Primary.args
 }
