@@ -16,7 +16,7 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 
     <ng-content></ng-content>
 
-    <button (click)="output1.emit('output1: event')"
+    <button (click)="emitEvent(1, 'output1: event')"
             mat-raised-button
             mat-button
             color="primary">
@@ -25,7 +25,7 @@ import { Component, EventEmitter, Input, Output } from "@angular/core";
 
     <span class="px-2 d-inline-block w-25"></span>
 
-    <button (click)="output1.emit('output2: event')"
+    <button (click)="emitEvent(2, 'output2: event');"
             mat-raised-button
             mat-button
             color="primary">
@@ -50,6 +50,10 @@ export class TestCmpComponent {
 
   @Output() output1 = new EventEmitter();
   @Output() output2 = new EventEmitter();
+
+  emitEvent(output: number, text: string) {
+    output === 1 ? this.output1.emit(text) : this.output2.emit(text);
+  }
 }
 
 export enum Variant {
