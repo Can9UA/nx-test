@@ -20,30 +20,33 @@ export default {
   argTypes: {
     input1: {
       table: {
-        category: 'numbers'
+        category: 'inputs',
+        subcategory: 'Numbers'
       }
     },
     input2: {
       table: {
-        category: 'numbers'
+        category: 'inputs',
+        subcategory: 'Numbers'
       }
     },
     variant: {
       options: [0, 1, 2],
       control: { type: 'select' },
       table: {
-        category: 'Other',
+        category: 'inputs',
+        subcategory: 'Other',
         type: {
           summary: 'Here is label',
           detail: 'Text inside the label pdf hdfuhas ifhfi huaf'
         }
-
       },
       description: 'Description lorem ipsom',
     },
     flag: {
       table: {
-        category: 'Other'
+        category: 'inputs',
+        subcategory: 'Other',
       }
     },
     output1: {
