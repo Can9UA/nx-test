@@ -13,7 +13,7 @@ export default {
   parameters: {
     docs: {
       source: {
-        type: 'code',
+        type: 'auto', // code, auto, dynamic
       }
     }
   },
