@@ -26,4 +26,5 @@ export const parameters = {
       ...customViewports,
     },
   },
+  layout: 'centered',
 };
