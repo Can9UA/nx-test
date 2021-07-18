@@ -1,6 +1,7 @@
 import { moduleMetadata, Story, Meta } from '@storybook/angular';
 import { TestCmpComponent } from "./test-cmp.component";
 import { TestLibModule } from "./test-lib.module";
+import { action } from '@storybook/addon-actions';
 
 export default {
   title: 'Components/TestComponent',
@@ -78,19 +79,29 @@ export default {
       table: {
         category: 'Outputs'
       }
-    },
-    emitEvent: { action: 'emitEvent arguments' },
+    }
   }
 } as Meta<TestCmpComponent>;
 
+const componentOutputs = {
+  output1: action('output1 return'),
+  output2: action('output2 return'),
+};
+
 const Template: Story<TestCmpComponent> = (args: TestCmpComponent) => ({
   component: TestCmpComponent,
-  props: args,
+  props: {
+    ...args,
+    output1: componentOutputs.output1,
+    output2: componentOutputs.output2,
+  },
   template: `
     <h1> Custom template </h1>
     <hr>
-    <nx-test-cmp [input1]="${args.input1}"
-                 [input2]="${args.input2}">
+    <nx-test-cmp [input1]="input1"
+                 [input2]="input2"
+                 (output1)="output1($event)"
+                 (output2)="output2($event)">
     </nx-test-cmp>
   `
 });
