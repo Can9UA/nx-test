@@ -20,11 +20,13 @@ export default {
   },
   argTypes: {
     input1: {
+      type: {
+        required: true
+      },
       table: {
         category: 'inputs',
         subcategory: 'Numbers',
         type: {
-          // required: true,
           summary: 'Just an input',
           detail: 'Just details'
         },
@@ -36,6 +38,9 @@ export default {
       description: 'Description lorem ipsom',
     },
     input2: {
+      type: {
+        required: true
+      },
       table: {
         category: 'inputs',
         subcategory: 'Numbers'
