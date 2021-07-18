@@ -75,6 +75,7 @@ export default {
         category: 'Outputs'
       }
     },
+    emitEvent: { action: 'emitEvent arguments' },
   }
 } as Meta<TestCmpComponent>;
 
