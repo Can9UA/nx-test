@@ -83,17 +83,12 @@ export default {
   }
 } as Meta<TestCmpComponent>;
 
-const componentOutputs = {
-  output1: action('output1 return'),
-  output2: action('output2 return'),
-};
-
 const Template: Story<TestCmpComponent> = (args: TestCmpComponent) => ({
   component: TestCmpComponent,
   props: {
     ...args,
-    output1: componentOutputs.output1,
-    output2: componentOutputs.output2,
+    output1: action('output1 return'),
+    output2: action('output2 return')
   },
   template: `
     <h1> Custom template </h1>
